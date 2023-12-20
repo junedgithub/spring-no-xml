@@ -8,5 +8,6 @@ public class Test {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(MyConfig.class);
         Person person = (Person) applicationContext.getBean("person");
         person.run();
+        System.out.println(person.age);
     }
 }
